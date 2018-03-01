@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (2.0.2)
+  - LocationPicker (0.6.0)
+  - SwiftyJSON (2.4.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 2.0)
+  - LocationPicker (~> 0.6.0)
+  - SwiftyJSON (~> 2.3)
+
+SPEC CHECKSUMS:
+  Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
+  LocationPicker: 93ea916c48fef7b561fc4ecc2457cbb4ac58d7cf
+  SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
+
+PODFILE CHECKSUM: 44990b4cda8a1a72865215ac261cab98bece101c
+
+COCOAPODS: 1.4.0

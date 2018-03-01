@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/colorPrimary" />
+
+    <item>
+        <bitmap
+            android:gravity="center|fill_vertical|fill_horizontal"
+            android:src="@drawable/launcher_image_blue" />
+    </item>
+</layer-list>

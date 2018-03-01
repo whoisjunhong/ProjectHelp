@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Project Help</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="request_header">Request for help</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_login">Login</string>
+    <string name="about_us">About Project Help</string>
+    <string name="about_us_description">Project Help is an initiative by Nanyang Polytechnic
+        students from the Diploma of Multimedia &amp;  Infocomm Technology. \n \n The purpose of this
+        application is to aid Senior Citizens to request help from volunteers. It can range from
+        tasks like washing the dishes, cleaning the toilet, tidying up the house or even accompanying
+        them for a walk! This application was build in conjunction with the Singapore Smart Nation
+        Initiative. \n \n So feel free to give us feedback on the application if you find it require fixes or
+        improvements! \n \n Wee Jun Hong \n Diploma of Multimedia &amp; Infocomm Technology \n Nanyang Polytechnic \n (Developer of Project Help)</string>
+    <string name="contact_number">Contact Us: +65 64515115</string>
+    <string name="contact_email">Email: weejunhong@gmail.com</string>
+    <string name="profile_header">Profile</string>
+    <string name="counterDescription"></string>
+
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string-array name="arrayGender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="arrayUserType">
+        <item>Elderly</item>
+        <item>Volunteer</item>
+    </string-array>
+
+    <string-array name="arrayService">
+        <item>Clean House</item>
+        <item>Do laundry</item>
+        <item>Cook meals</item>
+        <item>Accompany me</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_view_request">ViewRequestActivity</string>
+</resources>

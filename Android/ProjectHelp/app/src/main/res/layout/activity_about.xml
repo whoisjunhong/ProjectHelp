@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.nyp.projecthelp.NavigationActivity"
+    tools:showIn="@layout/app_bar_navigation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+    
+            <TableRow
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/about_us"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorWhite"/>
+            </TableRow>
+    
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp">
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_heart" />
+            </TableRow>
+    
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp">
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="300dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:ellipsize="none"
+                    android:maxLines="1000"
+                    android:textColor="@color/colorWhite"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/about_us_description"
+                    android:textSize="18sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp" >
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="400dp"
+                    android:ellipsize="none"
+                    android:maxLines="1000"
+                    android:textColor="@color/colorWhite"
+                    android:textColorLink="@color/colorWhite"
+                    android:layout_gravity="center_horizontal"
+                    android:autoLink="phone"
+                    android:text="@string/contact_number"
+                    android:textSize="18sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp" >
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="400dp"
+                    android:ellipsize="none"
+                    android:maxLines="1000"
+                    android:textColor="@color/colorWhite"
+                    android:textColorLink="@color/colorWhite"
+                    android:layout_gravity="center_horizontal"
+                    android:autoLink="email"
+                    android:text="@string/contact_email"
+                    android:textSize="18sp"
+                    android:paddingBottom="30dp" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="400dp"
+                    android:ellipsize="none"
+                    android:maxLines="1000"
+                    android:textColor="@color/colorWhite"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Release 1.0"
+                    android:textSize="18sp"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

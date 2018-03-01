@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.nyp.projecthelp.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Profile"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp">
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_profilelarge" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp"
+                android:layout_weight="1"
+                android:ellipsize="none"
+                android:maxLines="100"
+                android:scrollHorizontally="false">
+                <TextView
+                    android:text="Username:"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:padding="20dp">
+                <EditText
+                    android:id="@+id/profileUsername"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:hint="Username"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="text" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp" >
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="-50dp"
+                    android:text="Gender:"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_marginLeft="-50dp"
+                    android:id="@+id/profileGender"
+                    android:textColor="@color/colorWhite"
+                    android:text=""
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp" >
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginRight="-30dp"
+                    android:text="User Type:"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_marginLeft="-50dp"
+                    android:id="@+id/profileUserType"
+                    android:textColor="@color/colorWhite"
+                    android:text=""
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp"
+                android:layout_weight="1"
+                android:ellipsize="none"
+                android:maxLines="100"
+                android:scrollHorizontally="false">
+                <TextView
+                    android:text="Address:"
+                    android:layout_marginLeft="-30dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <EditText
+                    android:id="@+id/profileAddress"
+                    android:inputType="textMultiLine"
+                    android:layout_width="250dp"
+                    android:lines="4"
+                    android:minLines="2"
+                    android:gravity="top|left"
+                    android:maxLines="5"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:text=""
+                    />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp" >
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Unit No:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <EditText
+                    android:id="@+id/unitno"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="number"
+                    android:digits="0123456789-"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp"
+                android:paddingBottom="10dp">
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorWhite"
+                    android:text="Change Password:"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <EditText
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/profileOldPassword"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:hint="Current Password"
+                    android:inputType="textPassword"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp">
+                <EditText
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/profilePassword"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:hint="New Password"
+                    android:inputType="textPassword"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp">
+
+                <Button
+                    android:id="@+id/btnSaveChanges"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:textColor="#026eca"
+                    android:background="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:text="Save Changes"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

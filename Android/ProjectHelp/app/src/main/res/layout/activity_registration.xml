@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientmint"
+    tools:context="edu.nyp.projecthelp.RegistrationActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:paddingTop="80dp">
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="REGISTRATION"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp" >
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Name:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <EditText
+                    android:id="@+id/name"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="text" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp" >
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Username:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <EditText
+                    android:id="@+id/username"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="text" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp" >
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Password:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <EditText
+                    android:id="@+id/password"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="textPassword" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp" >
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Gender:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <Spinner
+                    android:textAlignment="center"
+                    android:id="@+id/spinGender"
+                    android:entries="@array/arrayGender"
+                    android:layout_marginBottom="5dp"
+                    android:popupBackground="#af8fcb8f"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp" >
+                <TextView
+                    android:text="Address:"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:ellipsize="none"
+                    android:maxLines="100"
+                    android:scrollHorizontally="false"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <EditText
+                    android:id="@+id/address"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="textMultiLine"
+                    android:layout_width="200dp"
+                    android:lines="4"
+                    android:minLines="2"
+                    android:gravity="top|left"
+                    android:maxLines="5"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp" >
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Unit No:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <EditText
+                    android:id="@+id/unitno"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="number"
+                    android:digits="0123456789-"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp" >
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="What are you?:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"/>
+            </TableRow>
+
+
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <Spinner
+                    android:textAlignment="center"
+                    android:id="@+id/spinUserType"
+                    android:entries="@array/arrayUserType"
+                    android:layout_marginBottom="5dp"
+                    android:popupBackground="#af8fcb8f"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="60dp"
+                    android:onClick="registerClick"
+                    android:background="@color/colorWhite"
+                    android:textColor="#489648"
+                    android:text="@string/btn_register" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:padding="30dp">
+                <Button
+                    android:id="@+id/notRegistered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/transparent"
+                    android:backgroundTint="@color/transparent"
+                    android:text="Already have an account? :)"
+                    android:onClick="intentToLogin"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

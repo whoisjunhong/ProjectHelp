@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientblue"
+    tools:context="edu.nyp.projecthelp.RequestActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Request"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp">
+                <TextView
+                    android:gravity="center"
+                    android:text="Name:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_marginLeft="-90dp"
+                    android:id="@+id/requestName"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:text=""
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp" >
+                <TextView
+                    android:gravity="center"
+                    android:text="Gender:"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_marginLeft="-70dp"
+                    android:id="@+id/requestGender"
+                    android:textColor="@color/colorWhite"
+                    android:text=""
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp" >
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:text="User Type:"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_marginLeft="-70dp"
+                    android:id="@+id/requestUserType"
+                    android:textColor="@color/colorWhite"
+                    android:text=""
+                    android:textSize="20sp"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp"
+                android:layout_weight="1"
+                android:ellipsize="none"
+                android:maxLines="100"
+                android:scrollHorizontally="false">
+                <TextView
+                    android:text="Type of Service:"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp">
+                <Spinner
+                    android:textAlignment="center"
+                    android:id="@+id/spinService"
+                    android:entries="@array/arrayService"
+                    android:layout_marginBottom="5dp"
+                    android:popupBackground="#ac73c7ff"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp">
+                <TextView
+                    android:text="Address:"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <EditText
+                    android:id="@+id/requestAddress"
+                    android:inputType="textMultiLine"
+                    android:focusable="false"
+                    android:layout_width="250dp"
+                    android:lines="4"
+                    android:minLines="2"
+                    android:gravity="top|left"
+                    android:maxLines="5"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:text=""
+                    />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <Button
+                    android:id="@+id/btnSearchAddress"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:textColor="@color/colorBlue"
+                    android:text="Change Location">
+                </Button>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp" >
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Unit No:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+                <EditText
+                    android:id="@+id/unitno"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="number"
+                    android:digits="0123456789-"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp" >
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="When?"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/requestDate"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:hint="YYYY-MM-DD"
+                    android:inputType="date"
+                    android:maxLength="10"
+                    android:digits="0123456789-"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp" >
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="What time?"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/requestTime"
+                    android:textColor="@color/colorWhite"
+                    android:hint="24 Hour Format"
+                    android:maxLength="4"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="time"/>
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal">
+
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_horizontal"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp">
+
+                <Button
+                    android:id="@+id/btnRequestService"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:textColor="#026eca"
+                    android:background="@color/colorWhite"
+                    android:backgroundTint="@color/colorWhite"
+                    android:text="Request for service"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
